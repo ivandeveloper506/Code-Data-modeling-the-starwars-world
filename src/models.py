@@ -30,37 +30,37 @@ class HairColorCat(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [hair_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Color de Piel
+# [skin_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Color de Piel
 class SkinColorCat(Base):
     __tablename__ = 'skin_color_cat'
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [hair_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Color de Ojos
+# [eye_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Color de Ojos
 class EyeColorCat(Base):
     __tablename__ = 'eye_color_cat'
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [hair_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Generos
+# [gender_cat] : Esta entidad permitirá almacenar un Cátalogo de Generos
 class GenderCat(Base):
     __tablename__ = 'gender_cat'
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [hair_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Climas
+# [climate_cat] : Esta entidad permitirá almacenar un Cátalogo de Climas
 class ClimateCat(Base):
     __tablename__ = 'climate_cat'
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [hair_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Terrenos
+# [terrain_cat] : Esta entidad permitirá almacenar un Cátalogo de Terrenos
 class TerrainCat(Base):
     __tablename__ = 'terrain_cat'
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [hair_color_cat] : Esta entidad permitirá almacenar un Cátalogo de Clases de Vehiculos
+# [vehicle_class_cat] : Esta entidad permitirá almacenar un Cátalogo de Clases de Vehiculos
 class VehicleClassCat(Base):
     __tablename__ = 'vehicle_class_cat'
     id = Column(Integer, primary_key=True)
