@@ -42,12 +42,6 @@ class EyeColorCat(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(20), nullable=False)
 
-# [gender_cat] : Esta entidad permitirá almacenar un Cátalogo de Generos
-class GenderCat(Base):
-    __tablename__ = 'gender_cat'
-    id = Column(Integer, primary_key=True)
-    name = Column(String(20), nullable=False)
-
 # [climate_cat] : Esta entidad permitirá almacenar un Cátalogo de Climas
 class ClimateCat(Base):
     __tablename__ = 'climate_cat'
@@ -79,8 +73,6 @@ class User(Base):
     user_name = Column(String(50), unique=True)
     password = Column(String(50))
     user_image = Column(String(2000))
-    gender_cat_id = Column(Integer, ForeignKey('gender_cat.id'))
-    gender_cat = relationship(GenderCat)
 
 # [people] : Esta entidad permitirá almacenar los personas o personajes.
 class People(Base):
@@ -97,8 +89,6 @@ class People(Base):
     skin_color_cat = relationship(SkinColorCat)
     eye_color_cat_id = Column(Integer, ForeignKey('eye_color_cat.id'))
     eye_color_cat = relationship(EyeColorCat)
-    gender_cat_id = Column(Integer, ForeignKey('gender_cat.id'))
-    gender_cat = relationship(GenderCat)
 
 # [planet] : Esta entidad permitirá almacenar los planetas.
 class Planet(Base):
